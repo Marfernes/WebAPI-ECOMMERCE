@@ -21,7 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
+    <Folder Include="Exceptions\Messages\" />
+    <Folder Include="Service\" />
   </ItemGroup>
 
 </Project>

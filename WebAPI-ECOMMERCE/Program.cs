@@ -1,4 +1,16 @@
+﻿using Microsoft.Data.SqlClient;
+using WebAPI_ECOMMERCE.Helpers;
+
 var builder = WebApplication.CreateBuilder(args);
+
+var resultConn = DataBaseHelper.ObterConnectionString();
+
+if (!resultConn.Sucesso)
+{
+    Console.WriteLine(resultConn.Mensagem);
+    return;
+}
+var connectionString = resultConn.Dados;
 
 // Add services to the container.
 
